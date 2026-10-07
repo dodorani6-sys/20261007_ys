@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Heart } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -20,9 +20,21 @@ export default function Header() {
               Gemini 기반 일괄 감성·유형 분류 및 한국소비자원 공식 위해 접수 데이터 교차 검증 대시보드
             </p>
           </div>
-          <div className="flex items-center gap-2 text-xs text-slate-500 bg-slate-50 px-3 py-2 rounded-lg border border-slate-200">
-            <Sparkles className="w-4 h-4 text-amber-500" />
-            <span>표준화된 정기 분석 &amp; DB 이력 누적</span>
+
+          <div className="flex flex-wrap items-center gap-2.5">
+            {/* made by 라니 버튼 */}
+            <div
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 text-white text-xs font-bold shadow-xs hover:shadow-md hover:scale-105 active:scale-95 transition-all duration-200 cursor-default select-none"
+              title="제작: 라니"
+            >
+              <Heart className="w-3.5 h-3.5 fill-current text-white animate-pulse" />
+              <span>made by 라니</span>
+            </div>
+
+            <div className="flex items-center gap-2 text-xs text-slate-500 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
+              <Sparkles className="w-4 h-4 text-amber-500" />
+              <span>표준화된 정기 분석 &amp; DB 이력 누적</span>
+            </div>
           </div>
         </div>
       </div>
